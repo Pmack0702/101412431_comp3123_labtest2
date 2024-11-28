@@ -1,7 +1,7 @@
 import React from "react";
-import "./WeatherData.css";
 
 export const WeatherData = ({ weatherData, forecast }) => {
+  
   if (!weatherData || !forecast) return null;
 
   const { name, main, weather, wind } = weatherData;

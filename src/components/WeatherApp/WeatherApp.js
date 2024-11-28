@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Search } from "./Search";
+import { Search } from "../Navbar/Search";
 import { WeatherData } from "./WeatherData";
-import "./App.css";
 
 export const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
