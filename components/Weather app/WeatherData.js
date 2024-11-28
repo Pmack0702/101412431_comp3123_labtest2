@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
+import "./WeatherData.css";
 
-export const WeatherDisplay = () => {
+export const WeatherData = ({ weatherData, forecast }) => {
+  if (!weatherData || !forecast) return null;
 
-    const { name, main, weather, wind } = weatherData;
-    const currentDay = new Date().toLocaleDateString("en-US", {
-      weekday: "long",
-      month: "long",
-      day: "numeric",
-    });
+  const { name, main, weather, wind } = weatherData;
+  const currentDay = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
-    <div>
-    
-        <div className="main-info">
-            <h2>{currentDay}</h2>
-            <h3>{name}</h3>
-            <h1>{Math.round(main.temp)}°C</h1>
-            <p>{weather[0].description}</p>
-    </div>
+    <div className="weather-data">
+      <div className="main-info">
+        <h2>{currentDay}</h2>
+        <h3>{name}</h3>
+        <h1>{Math.round(main.temp)}°C</h1>
+        <p>{weather[0].description}</p>
+      </div>
 
       <div className="detailed-info">
-        <p>PREDICTABILITY: 71%</p>
         <p>HUMIDITY: {main.humidity}%</p>
         <p>WIND: {wind.speed} km/h</p>
         <p>PRESSURE: {main.pressure} mb</p>
@@ -40,10 +40,6 @@ export const WeatherDisplay = () => {
           </div>
         ))}
       </div>
-
-      
     </div>
-
-    
-  )
-}
+  );
+};
