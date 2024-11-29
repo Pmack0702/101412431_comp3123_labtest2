@@ -41,7 +41,7 @@ Error handling for better user experience.
 ![Current Weather Screenshot](images/Weather2.png)
 
 ### Postman Testing 
-![Postman Testing Screenshot](images/POSTMAN.png)
+![Postman Testing Screenshot](101412431_comp3123_labtest2\src\images\POSTMAN.png)
 
 
 
