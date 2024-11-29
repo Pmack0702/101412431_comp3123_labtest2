@@ -37,11 +37,12 @@ Error handling for better user experience.
 ### Search Bar
 
 ### Current Weather
-![Current Weather Screenshot](images/Weather1.png)
-![Current Weather Screenshot](images/Weather2.png)
+![Current Weather Screenshot](src/images/Weather1.png)
+![Current Weather Screenshot](src/images/Weather2.png)
 
 ### Postman Testing 
-![Postman Testing Screenshot](101412431_comp3123_labtest2\src\images\POSTMAN.png)
+![Postman Testing Screenshot](src/images/POSTMAN.png)
+
 
 
 
