@@ -34,11 +34,15 @@ Error handling for better user experience.
 
 ### Search Bar
 
+### Search Bar
+
 ### Current Weather
-![Current Weather Screenshot](images/Weather1.png) (images/Weather2.png)
+![Current Weather Screenshot](images/Weather1.png)
+![Current Weather Screenshot](images/Weather2.png)
 
 ### Postman Testing 
 ![Postman Testing Screenshot](images/POSTMAN.png)
+
 
 
 
