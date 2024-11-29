@@ -30,7 +30,7 @@ Error handling for better user experience.
 - Runs the app in the development mode.
 - Open http://localhost:3000 to view it in your browser.
 
-#Project Output
+# Project Output
 
 ### Current Weather
 ![Current Weather Screenshot](src/images/Weather1.png)
