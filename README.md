@@ -32,10 +32,6 @@ Error handling for better user experience.
 
 #Project Output
 
-### Search Bar
-
-### Search Bar
-
 ### Current Weather
 ![Current Weather Screenshot](src/images/Weather1.png)
 ![Current Weather Screenshot](src/images/Weather2.png)
