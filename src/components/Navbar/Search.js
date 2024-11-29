@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { TextField, Button, Box } from "@mui/material";
+
 
 export const Search = ({ setWeatherData, setForecast, setError }) => {
   const [city, setCity] = useState("");
 
   const fetchWeather = async (city) => {
-    
     const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
     const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
@@ -38,14 +39,32 @@ export const Search = ({ setWeatherData, setForecast, setError }) => {
   };
 
   return (
-    <div className="search-bar">
-      <input
-        type="text"
-        placeholder="Enter city name"
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 2,
+        mt: 4,
+      }}
+    >
+      <TextField
+        label="Enter City Name"
+        variant="outlined"
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        sx={{ width: "300px" }}
       />
-      <button onClick={handleSearch}>Search</button>
-    </div>
+      <Button
+        variant="contained"
+        onClick={handleSearch}
+        sx={{
+          bgcolor: "primary.main",
+          "&:hover": { bgcolor: "primary.dark" },
+        }}
+      >
+        Search
+      </Button>
+    </Box>
   );
 };
